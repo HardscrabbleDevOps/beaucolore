@@ -1,0 +1,35 @@
+.grid {
+	position: relative;
+	z-index: 2;
+	display: block;
+	margin: 0 auto;
+}
+
+.grid__sizer {
+	margin-bottom: 0 !important;
+}
+/*.grid__item {
+    width: 259px;
+}*/
+
+.grid .grid__item,
+.grid .grid__sizer {
+	width: calc(100% - 2px);
+	margin: 0 5px 5px;
+}
+
+@media screen and (min-width: 60em) {
+	.grid .grid__item,
+	.grid .grid__sizer {
+		width: calc((100% / 3) - 20px);
+		margin: 0 10px 20px;
+	}
+}
+
+@media screen and (min-width: 70em) {
+	.grid .grid__item,
+	.grid .grid__sizer {
+		width: calc(25% - 30px);
+		margin: 0 15px 30px;
+	}
+}

@@ -1,0 +1,250 @@
+
+body, html {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: "CENTURY GOTHIC", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+    font-size: 16px;
+
+}
+.scroll_top {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    border: solid thin lightgrey;
+    z-index: +3;
+    display: none;
+}
+.branding {
+    font-size: 34px;
+    font-family: 'CENTURY GOTHIC';
+}
+.parallax, .parallax_everywhere{
+    /* The image used */
+    background-image: url('/app/img/beau42_.png');
+    /* Full height */
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.clipped{
+    clip-path: polygon(0 0, 0 90% , 75% 100%, 100% 85%, 100% 0 );
+    max-height: 459px;
+}
+
+.parallax-inner *, .parallax-inner h1{
+    color:white;
+}
+.parallax-cover, .cover{
+    height:100%;
+    background-color:black;
+    opacity: 0.5;
+    z-index:+1;
+}
+.parallax-inner, .parallax-inner-video{
+    padding: 15% 10% 10% 10%;
+    z-index:+3;
+    opacity: 1;
+    position: absolute;
+    top:0%;
+}
+
+#mainNav{
+    background-color:transparent;
+    border-bottom: none;
+}
+.header *{
+    color:white;
+}
+.header.dark * {
+    color: black;
+}
+.banner{
+   background-color: white;
+   padding: 3%;
+   width: 60%;
+   /*border: solid thin white;*/
+}
+.logo {
+    padding-left: 15%;
+}
+.hero-mobile-nav {
+    font-size: 2em;
+    color:black;
+    margin-left: 15%;
+}
+.subscribe h3, .services-section-head h3 {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 1.9em;
+    font-weight: 500;
+    margin-bottom: 1.2em;
+}
+.services-section-grid{
+    padding-top: 3%;
+}
+.img_portfolio{
+    width:98%;
+
+}
+.featured-img{
+    width: 612px;
+    height: auto;
+}
+.slideshow-cover{
+    position: absolute;
+    top: 0%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: +1;
+    height: 712px;
+    width: 100%;
+}
+/*
+=======================================================
+==== SMALLER SCREEN SIZES
+=======================================================
+*/
+@media only screen and (max-width: 1024px) {
+    .parallax-inner{
+        top:2.5%;
+    }
+    .parallax{
+        background-image: url('/app/img/beau42_.png');
+        height: 771px;
+        /*height: 512px;*/
+        background-position: top;
+        background-size: 1024px 512px;
+    }
+    .cover {
+        height:771px;
+    }
+    .featured-img{
+        width: 555px;
+        height: auto;
+    }
+    .parallax-inner h1 {
+        font-size: 48px;
+    }
+
+}
+@media only screen and (max-width: 771px) {
+    .parallax-inner{
+        top:7%;
+    }
+    .parallax{
+        /* The image used */
+        background-image: url('/app/img/beau42_.png');
+        /* Full height */
+        height: 512px;
+        background-attachment: fixed;
+        background-position: top;
+        background-size: 771px 512px;
+    }
+    .cover{
+        height:512px;
+    }
+    .logo {
+        padding-left: 0%;
+    }
+    .parallax-inner h1 {
+        font-size: 36px;
+    }
+    .slideshow-cover{
+        height: 512px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 426px){
+    .parallax{
+        height: 426px;
+        background-attachment: fixed;
+        background-position: top;
+        background: url('/app/img/beau42_.png');
+        background-size: 426px 426px;
+    }
+    .parallax-inner {
+        top:2.5%;
+        /*padding: 8% 10% 10% 10%;*/
+    }
+    .parallax-inner h1 {
+        font-size: 22px;
+    }
+    .slideshow-cover{
+        height: 341px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 388px){
+    .parallax{
+        height: 426px;
+        background-attachment: fixed;
+        background-position: top;
+        background: url('/app/img/beau42_.png');
+        background-size: 388px 388px;
+    }
+    .featured-img{
+        width: 288px;
+        height: 256px;
+    }
+}
+
+
+.clearfix {clear: both; zoom: 1;}
+/*
+===============================================================
+===    ZOOM EFFECT
+===============================================================
+*/
+.zoom {
+    transition: transform 6s;
+}
+.zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+}
+/*
+===============================================================
+===    COLOR PALETTE
+===============================================================
+*/
+    .beau_green {
+        color: #30948e;
+    }
+    .beau_orange {
+        color: #efb229;
+    }
+    .beau_pink {
+        color: #ed526e;
+    }
+    .beau_primary_offblue {
+        color: #48848e;
+    }
+    .beau_primary_lightmaroon {
+        color: #be77ae;
+    }
+
+    .primary_color{
+        color: #be77ae;
+        font-size: 1.7em;
+    }
+
+    .secondary_color {
+        color: #30948e;
+        font-size: 1.7em;
+    }
+
+    .tertiary_color {
+        color: #ed526e;
+        font-size: 1.5em;
+    }
+
+    .dark {
+        color: #55616A;
+    }

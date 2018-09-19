@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Brand It! | Contact Us</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" gt; meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <meta name="description" content="Discover where and how you can get in touch with Brand It! Zimbabwe. The premier marketing consultancy." />
+    <meta name="keywords" content="marketing, marketing consultancy, marketing agency, advertising, web design, shirt printing, signage and vehicle branding, printing, corporate wear, graphic design, corporate gifting" />
+    <meta name="author" content="Hardscrabble" />
+    <!-- build:contactcss app/css/app-contact.css -->
+    <link rel="stylesheet" href="./app/css/bootstrap.css">
+    <link rel="stylesheet" href="./app/css/master.css">
+    <link rel="stylesheet" href="./app/css/materialize.min.css">
+    <link rel="stylesheet" href="app/css/fonts/iconfont/material-icons.css">
+    <link rel="stylesheet" href="./app/css/contact.css">
+    <!-- endbuild -->
+
+
+</head>
+<body >
+    <!-- header -->
+    <div class="header">
+
+    </div>
+
+    <!-- hero banner -->
+    <div class="parallax clipped" id="">
+
+        <div class="slideshow-cover"></div>
+        <div class="parallax-inner" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-md-offset-1">
+                        <h3 data-aos="fade-up" data-aos-delay="250" class="branding ">Contact Us</h3>
+                        <p data-aos="fade-up" data-aos-delay="250" >
+                            Please feel free to get in touch, we are available on email, phone or pop 'round for a chat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="divOne" style="height:100%;background-color:white;">
+
+        <div id="" class="">
+            <div class="subscribe text-center">
+                <div class="">
+
+                    <div class="">
+                        <div class="row">
+                            <div class="col s12 m6 l6 pull-right">
+                                <form ng-submit="$event.preventDefault()" name="searchForm" class="col s12">
+                                    <center>
+                                        <p class="secondary_color">Talk To Us</p>
+                                          <div class="column">
+                                             <div class="input-field col s12">
+                                                <i class="material-icons prefix">account_circle</i>
+                                                <input placeholder="name" value="" id="name" type="text" class="active validate" required>
+                                                <label for="name">Name</label>
+                                             </div>
+                                             <div class="input-field col s12">
+                                                 <i class="material-icons prefix">mail</i>
+                                                <label for="email">Email</label>
+                                                <input id="email" type="email" placeholder="Email Address" class="validate" required>
+                                             </div>
+                                             <div class="input-field col s12">
+                                               <i class="material-icons prefix">mode_edit</i>
+                                               <textarea id="address" class="materialize-textarea"></textarea>
+                                               <label for="address">Message</label>
+                                            </div>
+                                          </div>
+                                          <button class="btn waves-effect waves-light deep-orange" type="submit">Send Enquiry<i class="material-icons right">send</i></button>
+                                      </center>
+                                </form>
+                            </div>
+                            <div class="col s12 m6 l6 pull-left">
+                                <p class="secondary_color">Come Find Us</p>
+                                <i class="material-icons">location_city</i>
+                                <p> 36 Campbelltown Road, </p>
+                                <p> Bluff Hill, </p>
+                                <p> Harare </p>
+                                <hr>
+                                <i class="material-icons">phone</i>
+                                <p> +263 772 362 736 </p>
+                                <p> +263 867 717 5669 </p>
+                                <hr>
+                                <i class="material-icons prefix">mail</i>
+                                <p> nyasha@branditzim.co.zw </p>
+                                <p> marketing@branditzim.co.zw </p>
+                            </div>
+                        </div>
+                        <hr><br>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div id="map" class="parallax" style="color: white; background: linear-gradient(89deg, red, blue);">
+
+        </div>
+
+
+        <div id="" class="">
+            <div class="subscribe text-center">
+                <div class="container">
+
+                </div>
+            </div>
+
+        </div>
+        <br>
+
+        <div id="" class=""  style="width:auto;height:auto; margin:0%; padding:0%">
+           <div class="subscribe text-center">
+              <div class="container">
+                  <md-content class="md-padding">
+                      <p>
+                          Copyright (c) 2018 Brand It Zimbabwe. All Rights Reserved.
+                      </p>
+                  </md-content>
+              </div>
+           </div>
+        </div>
+
+        <div style="" class="scroll_top">
+            <button class="btn transparent btn-flat btn-floating btn-large">
+                <i class="material-icons" style="color: #55616A;">arrow_upward</i>
+            </button>
+        </div>
+    </div>
+
+        <!-- build:contactjs app/app-contact.js -->
+        <script src="./app/js/jquery-1.11.1.min.js"></script>
+        <script src="./app/js/bootstrap.min.js"></script>
+        <script src="./app/js/materialize.min.js"></script>
+        <script src="./app/js/custom.js"></script>
+        <!-- endbuild -->
+        <script>
+           function initMap() {
+                var uluru = { lat: -17.8540187, lng: 31.0540458};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 18,
+                  center: uluru
+                });
+                var marker = new google.maps.Marker({
+                  position: uluru,
+                  map: map
+                });
+              }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0jIY1DdGJ7yWZrPDmhCiupu_K2En_4HY&callback=initMap"></script>
+
+</body>
+</html>

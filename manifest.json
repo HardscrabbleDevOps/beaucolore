@@ -1,0 +1,19 @@
+{
+  "short_name": "It!",
+  "name": "Brand It!",
+  "icons": [
+      {
+          "src":"app/img/icon192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+      },{
+          "src":"app/img/icon512x512.png",
+          "sizes": "512x512",
+          "type": "image/png"
+      }
+  ],
+  "start_url": "./",
+  "background_color": "#009688",
+  "theme_color": "#009688",
+  "display": "standalone"
+}

@@ -1,0 +1,74 @@
+p{
+    font-size: 16px;
+}
+
+.parallax-major-cover{
+    width: 45%;
+    height: 45%;
+    border-radius: 12px;
+    /* Fallback for web browsers that don't support RGBa */
+    background-color: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* For IE 5.5 - 7*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000)";
+}
+.parallax-major-cover p{
+    font-size: 18px;
+}
+.parallax-major-inner{
+    align-self: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.parallax, .parallax_everywhere{
+    display: flex;
+}
+/*
+=======================================================
+==== SMALLER SCREEN SIZES
+=======================================================
+*/
+@media only screen and (max-width: 1024px) {
+    .parallax_everywhere{
+        height: 51%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .parallax-major-cover{
+        width: 65%;
+        height: 65%;
+    }
+}
+@media only screen and (max-width: 771px) {
+
+
+}
+
+@media (max-width: 426px){
+    .parallax_everywhere{
+        height: 66%;
+    }
+    .parallax-major-cover{
+        width: 75%;
+    }
+    .slideshow-cover{
+        position: absolute;
+        top: 0%;
+        background-color: black;
+        opacity: 0.5;
+        z-index: +1;
+        height: 712px;
+        width: 100%;
+    }
+
+}
+
+@media ( max-width: 378px ){
+
+}
