@@ -6618,12 +6618,12 @@ PORTFOLIO PAGE ELEMENTS
     width: 95%; height: 95%;
     z-index: +2300;
     top: 2.5%; left: 2.5%;
-    background-color: whitesmoke;
+    background-color: rgba(0,0,0,0.9);
     display: none;
     box-shadow: 0 6px 12px rgba(0,0,0,0.32), 0 6px 12px rgba(0,0,0,0.48);
 }
 .modal-img {
-    max-width: 75%; max-height: 100%;
+    max-width: 75%; height: 100%;
 }
 .close {
     position: absolute;
@@ -6641,14 +6641,14 @@ PORTFOLIO PAGE ELEMENTS
     filter: sepia(0);
 }
 .modal-blade{
-    width: 25%;
+    width: 45%;
     height: 100%;
     padding: 1%;
     /*border-radius: 12px 12px 0 0;*/
     /* Fallback for web browsers that don't support RGBa */
     background-color: rgb(0, 0, 0);
     /* RGBa with 0.6 opacity */
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0);
     /* For IE 5.5 - 7*/
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
     /* For IE 8*/
